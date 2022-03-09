@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="origins.css" />
+  </head>
+  <body>
+    <!-- SECTION1 -->
+    <section class="section1" id="section1">
+      <h1>Welcome Rocketeer !</h1>
+      <button class="QuestionnaireBtn">
+        <a href="#" onclick="show('section2','section1')">
+          Start Questionnaire</a
+        >
+      </button>
+      <div class="submittedapp"><a href="#"  onclick="show('section8','section1')">Submitted Applications</a></div>
+      <div><img src="resources/rocketman.svg" alt="rocketman" /></div>
+    </section>
+
+    <section class="section2" id="section2" style="display: none">
+      <div class="whitePart">
+        <h2>Hey, Rocketeer, what are your coordinates?</h2>
+        <form class="section2form" action="//tacos">
+          <input
+            type="text"
+            id="first_name"
+            name="first_name"
+            required
+            minlength="2"
+            placeholder="First Name"
+            class="input2"
+          />
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            required
+            minlength="2"
+            placeholder="Last Name"
+            class="input2"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="E mail"
+            class="input2"
+          />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+995 5_ _ _ _ "
+            required
+            class="input2"
+          />
+        </form>
+         <div class="footer">
+          <a href="#" class="previous " onclick="show('section1','section2')">&#9664;</a>
+          <a href="#" class="ball ">
+          <a href="#" class="ball ">
+          <a href="#" class="ball ">
+          <a href="#" class="ball ">
+          <a href="#" class="ball ">
+          <a href="#" class="next " onclick="show('section3','section2')"> &#9658;</a>
+        </div> 
+      </div>
+      <div class="blackPart">
+        <h2>Redberry Origins</h2>
+        <p class="p2">
+          You watch “What? Where? When?” Yeah. Our founders used to play it.
+          That’s where they got a question about a famous American author and
+          screenwriter Ray Bradbury. Albeit, our CEO Gaga Darsalia forgot the
+          exact name and he answered Ray Redberry. And at that moment, a name
+          for a yet to be born company was inspired - Redberry 😇
+        </p>
+      </div>
+    </section>
+
+    <section class="section3" id="section3" style="display: none">
+      <div class="whitePart">
+        <h2 id="h2">Tell us about your skills</h2>
+        <form class="section3form" action="//tacos">
+          <div id="section3option"></div>
+          <input
+            type="text"
+            id="experience"
+            name="experience"
+            required
+            minlength="2"
+            placeholder="Experience Duration in Years"
+            class="input3"
+          />
+        </form>
+        <button class="section3btn" id="section3btn">
+          Add Programming Language
+        </button>
+        <div class="section3form" id="section3form"></div>
+  
+        <div class="footer">
+          <a href="#" class="previous " onclick="show('section2','section3')">&#9664;</a>
+          <a href="#" class="ball ">
+          <a href="#" class="ball ">
+          <a href="#" class="ball ">
+          <a href="#" class="ball ">
+          <a href="#" class="ball ">
+          <a href="#" class="next " onclick="show('section4','section3')"> &#9658;</a>
+        </div> 
+      </div>
+      <div class="blackPart">
+        <h2>A bit about our battles</h2>
+        <p class="p3">
+          As we said, Redberry has been on the field for quite some time now,
+          and we have touched and embraced a variety of programming languages,
+          technologies, philosophies, and frameworks. We are battle-tested in
+          PHP Laravel Stack with Vue.js, refined in React, and allies with
+          Serverside technologies like Docker and Kubernetes, and now we have
+          set foot in the web3 industry.
+        </p>
+      </div>
+    </section>
+
+    <section class="section3" id="section4" style="display: none">
+      <div class="whitePart4">
+        <h2 id="h2">Covid Stuff</h2>
+        <form id="form" class="form4" action="">
+          <p id="form-prompt" class="form-prompt">
+            how would you prefer to work?
+          </p>
+          <input
+            type="radio"
+            id="work_preference"
+            name="work_preference"
+            value="from_office"
+          />
+          <label for="work_preference">From Sairme Office</label><br/>
+          <input
+            type="radio"
+            id="work_preference"
+            name="work_preference"
+            value="from_home"
+          />
+          <label for="work_preference">From Home</label><br/>
+          <input 
+           type="radio"
+           id="work_preference"
+           name="work_preference"
+           value="hybrid" />
+          <label for="work_preference">Hybrid</label>
+        </form>
+
+        <form id="form" class="form4" action="">
+          <p id="form-prompt" class="form-prompt"> Did you contact covid 19? :(</p>
+          <input 
+          type="radio" 
+          id="had_covid" 
+          name="had_covid" 
+          value= "true" />
+          
+          <label for="had_covid">Yes</label><br />
+          <input 
+          type="radio" 
+          id="had_covid" 
+          name="had_covid"  
+          value="false"/>
+          <label for="had_covid">No</label><br />
+        </form>
+
+        <form action="" class="form4">
+          <p id="form-prompt" class="form-prompt">When?</p>
+          <input
+            type="date"
+            id="had_covid_at"
+            name="had_covid_at"
+            min="2020-01-01"
+            max="2022-12-31"
+            placeholder="Date"
+          />
+        </form>
+
+        <form id="form" class="form4" action="">
+          <p id="form-prompt" class="form-prompt">Have you been vaccinated?</p>
+          <input 
+          type="radio" 
+          id="vaccinated" 
+          name="vaccinated"
+          value="true"  />
+          <label for="vaccinated">Yes</label><br />
+          <input 
+          type="radio" 
+          id="vaccinated" 
+          name="vaccinated"
+          value="false" />
+          <label for="vaccinated">No</label><br />
+        </form>
+        <form action="" class="form4">
+          <p id="form-prompt" class="form-prompt">
+            When did you get your last covid vaccine?
+          </p>
+          <input
+            type="date"
+            id="vaccinated_at"
+            name="vaccinated_at"
+            min="2020-01-01"
+            max="2022-12-31"
+            placeholder="Date"
+          />
+        </form>
+        <div class="footer footerflex">
+          <a href="#" class="previous " onclick="show('section3','section4')">&#9664;</a>
+          <a href="#" class="ball " >
+          <a href="#" class="ball ">
+          <a href="#" class="ball ">
+          <a href="#" class="ball ">
+          <a href="#" class="ball ">
+          <a href="#" class="next " onclick="show('section5','section4')"> &#9658;</a>
+        </div> 
+      </div>
+      <div class="blackPart">
+        <h2>Redberry Covid Policies</h2>
+        <p class="p4">
+          As this infamous pandemic took over the world, we adjusted our working
+          practices so that our employees can be as safe and comfortable as
+          possible. We have a hybrid work environment, so you can either work
+          from home or visit our lovely office on Sairme Street. If it was up to
+          us, we would love you to see us in the office because we think
+          face-to-face communications > Zoom meetings. Both on the fun and
+          productivity scales.
+        </p>
+      </div>
+    </section>
+
+    <section class="section2" id="section5" style="display: none">
+      <div class="whitePart4">
+        <h2>What about you?</h2>
+        <form id="form" class="form4" action="">
+
+        <p id="form-prompt" class="form-prompt">Would you attend Devtalks and maybe also organize your own?</p>
+        <input 
+          type="radio" 
+          id="will_organize_devtalk" 
+          name="will_organize_devtalk" 
+          value="true" />
+        <label for="Yes">Yes</label><br />
+        <input 
+          type="radio" 
+          id="will_organize_devtalk" 
+          name="will_organize_devtalk" 
+          value="false" />
+        <label for="No">No</label><br />
+        <form class="section2form" action="//tacos">
+      </form>
+          <p id="form-prompt" class="form-prompt">What would you speak about at Devtalk?</p>
+          <input
+            type="text"
+            id="devtalk_topic"
+            name="devtalk_topic"
+            required
+            placeholder=""
+            class="input2"
+          />
+          <p id="form-prompt" class="form-prompt">Tell us something special?</p>
+          <input
+          type="text"
+          id="something_special"
+          name="something_special"
+          required
+          placeholder=""
+          class="input2"
+        />
+        </form>
+
+        <div class="footer footerflex" >
+          <a href="#" class="previous " onclick="show('section4','section5')">&#9664;</a>
+          <a href="#" class="ball " >
+          <a href="#" class="ball ">
+          <a href="#" class="ball ">
+          <a href="#" class="ball ">
+          <a href="#" class="ball ">
+          <a href="#" class="next " onclick="show('section6','section5')"> &#9658;</a>
+        </div> 
+      </div>
+      <div class="blackPart">
+        <h2>Redberrian Insights</h2>
+        <p class="p2">
+          We were soo much fun before the pandemic started! Parties almost every
+          weekend and lavish employee birthday celebrations! Unfortunately,
+          covid ruined that fun like it did almost everything else in the world.
+          But we try our best to zhuzh it up a bit. For example, we host
+          biweekly Devtalks where our senior and lead developers talk about
+          topics they are passionate about. Previous topics have included Web3,
+          NFT, Laravel 9, Kubernetes, etc. We hold these talks in the office but
+          you can join our Zoom broadcast as well. Feel free to join either as
+          an attendee or a speaker!nt, a name for a yet to be born company was
+          inspired - Redberry 😇
+        </p>
+      </div>
+    </section>
+
+  <section id="section6" class="section6" style="display: none">
+    <input type="submit" value="Submit" class="QuestionnaireBtn" id="submitbutton">
+    <div class="submittedapp"><a href="#" onclick="show('section1','section6')" >Go back</a></div>
+  </section>
+
+  <section id="section7" class="section6" style="display: none">
+      <h2>Thanks for Joining 😊</h2>
+  </section>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <section id="section8" class="section8" style="display: none">
+    <p> For submitted applications please check console :( it is working. </p>
+</section>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <script src="origins.js"></script>
+  </body>
+</html>
